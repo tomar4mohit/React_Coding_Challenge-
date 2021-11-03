@@ -1,0 +1,129 @@
+
+h1 {
+    text-align: center;
+  }
+  #todo-list {
+    width: 80%;
+    margin: 60px auto;
+  }
+  form, .todo {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  form input {
+    padding: 4px 8px;
+    flex-grow: 1;
+    margin-right: 16px;
+  }
+  .todo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    font-size: 16px;
+    background-color: rgb(136, 145, 133);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    float:right;
+  }
+  button:hover {
+    background-color: rgb(173, 47, 28);
+  }
+  button:active {
+    background-color: rgb(130,35,21);
+  }
+  button:focus {
+    outline: 0;
+  }
+  input[type='text'] { font-size: 20px; font-family: monospace; }
+  .todo input[type="checkbox"] {
+    transform: scale(1.8) translateY(1px);
+    margin: 0 16px 0 0;
+    cursor: pointer;
+  }
+  .todo-text input {
+    padding: 4px;
+  }
+  .todo-text {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .todo-completed {
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
